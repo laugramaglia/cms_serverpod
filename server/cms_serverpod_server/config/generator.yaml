@@ -1,0 +1,6 @@
+type: server
+
+client_package_path: ../cms_serverpod_client
+server_test_tools_path: test/integration/test_tools
+# extraClasses:
+#   - package:cms_serverpod_shared/cms_serverpod_shared.dart:ApiResponse

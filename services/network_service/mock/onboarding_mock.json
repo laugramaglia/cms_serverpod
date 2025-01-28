@@ -1,0 +1,45 @@
+[
+    {
+        "path": "/originations/1",
+        "method": "POST",
+        "statusCode": 200,
+        "data": {
+            "origination_id": 0,
+            "status_id": 0
+        }
+    },
+    {
+        "path": "/originations/1/0:sendCodeToPhoneNumber",
+        "method": "POST",
+        "statusCode": 200,
+        "data": {
+            "status_id": 0
+        }
+    },
+    {
+        "path": "/originations/1/0:validateCode",
+        "method": "POST",
+        "statusCode": 200,
+        "data": {
+            "result": true,
+            "origination_id": 0,
+            "status_id": 0
+        }
+    },
+    {
+        "path": "/originations/1/0:createPassword",
+        "method": "POST",
+        "statusCode": 200,
+        "data": {
+            "result": true
+        }
+    },
+    {
+        "path": "/sessions",
+        "method": "POST",
+        "statusCode": 200,
+        "data": {
+            "status": "ok"
+        }
+    }
+]

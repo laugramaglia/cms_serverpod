@@ -1,0 +1,23 @@
+[
+    {
+        "path": "/WalletCoreAuth/login",
+        "method": "POST",
+        "statusCode": 200,
+        "data": {
+            "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMyODQ3NzY4IiwiaXNzIjoiQmVDbGV2ZXIiLCJuYW1laWQiOiIiLCJhdWQiOlsiOjoxIiwiQmVDbGV2ZXIiXSwic2lkIjoiRTg0MUZFOTktOEExNS00NzVDLTkxRDUtNzNDMTFCQTNGQUZEIiwianRpIjoiMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAwIiwiaWF0IjoiNjM4NjgyNDIxOTY2Mjk3MzM2IiwiZXhwIjoxNzMyNjQ4OTk2fQ.pu8MPZZUDqQ-BF_JdL72UpCKZgZTnsS5CITwY0K1u0s",
+            "expiration": "2024-11-26T19:23:16.6297139Z",
+            "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IjMyODQ3NzY4IiwiaXNzIjoiQmVDbGV2ZXJHZW5lcmFsIiwibmFtZWlkIjoiIiwiYXVkIjpbIjo6MSIsIkJlQ2xldmVyR2VuZXJhbCJdLCJzaWQiOiJFODQxRkU5OS04QTE1LTQ3NUMtOTFENS03M0MxMUJBM0ZBRkQiLCJqdGkiOiJlODBmNjZmMS1jNmFkLTRlMTEtOTQ0MC01NGIzOWEyYjYzZjYiLCJpYXQiOiI2Mzg2ODI0MjE5NjYyODM4MDkiLCJleHAiOjE3MzI4MTgxOTZ9.av5HRUuiUAcxyxjPC7i6aDXzz8gn4i1BxSurPX85TvY",
+            "refreshExpiration": "2024-11-28T18:23:16.6283506Z",
+            "userCore": "100100000108",
+            "lastName": "CABALLERO",
+            "name": "NORBERTO OSVALDO",
+            "mail": "norbertocaballero25@gmail.com",
+            "phone": null,
+            "birthDate": "1987-03-05T00:00:00",
+            "singleTaxIdentificationNumber": "20328477689",
+            "twofactor": 0,
+            "statusCode": "5",
+            "message": "Login successful"
+        }
+    }
+]

@@ -1,0 +1,10 @@
+# melos_managed_dependency_overrides: auth,cms_serverpod_client,network_service,theme_config
+dependency_overrides:
+  auth:
+    path: ../../features/auth
+  cms_serverpod_client:
+    path: ../../server/cms_serverpod_client
+  network_service:
+    path: ../../services/network_service
+  theme_config:
+    path: ../../services/theme_config

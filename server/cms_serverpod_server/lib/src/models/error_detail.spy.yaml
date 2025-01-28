@@ -1,0 +1,4 @@
+exception: ErrorDetail
+fields:
+  message: String
+  type: String

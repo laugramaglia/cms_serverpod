@@ -1,0 +1,22 @@
+name: icon_generator
+description: Brick to set icon and splash screen.
+
+version: 0.1.0+1
+
+vars:
+  background:
+    type: string
+    description: "HEX color (no #)"
+    default: FFFFFF
+    prompt: Splash background color
+  icon:
+    type: string
+    description: (1024px x 1024px, JPG format)
+    default: assets/brand/icon.jpg
+    prompt: Path to icon file
+
+  splash:
+    type: string
+    description: (1152px x 1152, PNG format)
+    default: assets/brand/splash.png
+    prompt: Path to splash file

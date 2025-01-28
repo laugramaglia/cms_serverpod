@@ -1,0 +1,94 @@
+[
+    {
+        "path": "/Configurations/1/1",
+        "method": "GET",
+        "statusCode": 200,
+        "data": {
+            "id_entity": "1",
+            "id_product": "1",
+            "id_affinity": "1",
+            "id_match": "80",
+            "id_document_type": 1,
+            "id_collect_account": 1,
+            "psp_id": 1806,
+            "userAuth": "test789@hotmail.com",
+            "passwordAuth": "DBODBO",
+            "SECRET_KEY": "398cd5c6-8095-4ee3-94d2-2589376f5b87",
+            "API_KEY": "4d3a2790-016a-4991-b12d-708f74787856",
+            "BASE_URL": "https://stationapi.veriff.com",
+            "VERIFF_CALLBACK": "https://qa.lendingfactory.cloud/CleverMiddleware.Gateway/api/v1/FabricaPrestamosBiometrics/NotificationCallbackVeriff",
+            "on_maintenance": false,
+            "concept_id": "VAR",
+            "concept_description": "concept_description",
+            "destination_id": 30,
+            "product_id": 1,
+            "commerce_id": 3,
+            "commerce_branch": 1,
+            "payment_method_id": 2,
+            "currency_id": 1,
+            "origin_operation_id": 0,
+            "plan_id": 1,
+            "entity_branch": 1,
+            "type_operation_id": 7,
+            "commerce_cashbox_id": 1,
+            "is_other_wallet": false,
+            "receiving_money_entity": 2,
+            "transfer_entity": 3,
+            "external_shipping_plan": 2,
+            "internal_shipping_plan": 1,
+            "flows": {
+                "type_operation": true,
+                "exist_account_exist_card": true,
+                "require_exist_card": false,
+                "collect_info": false,
+                "is_biometric": true,
+                "is_wallet": true,
+                "is_loan": false
+            },
+            "personalization": {
+                "logos": {
+                    "logo": "string",
+                    "splash": "string",
+                    "slogan": "string"
+                },
+                "colors": {
+                    "primary_color": "#062C2D",
+                    "secondary_color": "#062C2D",
+                    "background_primary": "#062C2D",
+                    "gradient_begin": "#062C2D",
+                    "gradient_end": "#062C2D"
+                }
+            },
+            "modules": {
+                "home": {
+                    "default": "WALLET",
+                    "widgets": {
+                        "whatsapp": {
+                            "active": false,
+                            "number_send": "string",
+                            "message_default": "string"
+                        },
+                        "loan": {
+                            "active": false,
+                            "buttons": {
+                                "loans": true,
+                                "payment_qr": false,
+                                "payment_installments": true,
+                                "loans_pending": true
+                            }
+                        },
+                        "wallet": {
+                            "active": false,
+                            "buttons": {
+                                "cash_in": false,
+                                "cash_out": false,
+                                "transfer": true,
+                                "scan_qr": false
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+]

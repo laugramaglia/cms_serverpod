@@ -1,0 +1,17 @@
+[
+    {
+        "path": "/user",
+        "method": "GET",
+        "statusCode": 200,
+        "data": {
+            "name": "NORBERTO OSVALDO ",
+            "last_name": "CABALLERO ",
+            "alias": "sdfsddf.sdfsdfsdfs",
+            "cvu": "0001806700000000000802",
+            "cuit": "20328477689",
+            "gender": "M",
+            "cvu_payment_method_id": 57,
+            "birthdate": "1987-03-05T00:00:00"
+        }
+    }
+]

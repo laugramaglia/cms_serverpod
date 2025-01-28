@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/apps/admin_panel_flutter/melos_admin_panel_flutter.iml" filepath="$PROJECT_DIR$/apps/admin_panel_flutter/melos_admin_panel_flutter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/features/auth/melos_auth.iml" filepath="$PROJECT_DIR$/features/auth/melos_auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/cms_serverpod_client/melos_cms_serverpod_client.iml" filepath="$PROJECT_DIR$/server/cms_serverpod_client/melos_cms_serverpod_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/cms_serverpod_server/melos_cms_serverpod_server.iml" filepath="$PROJECT_DIR$/server/cms_serverpod_server/melos_cms_serverpod_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/network_service/melos_network_service.iml" filepath="$PROJECT_DIR$/services/network_service/melos_network_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/services/theme_config/melos_theme_config.iml" filepath="$PROJECT_DIR$/services/theme_config/melos_theme_config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/melos_serverpod_flutter.iml" filepath="$PROJECT_DIR$/melos_serverpod_flutter.iml" />
+    </modules>
+  </component>
+</project>

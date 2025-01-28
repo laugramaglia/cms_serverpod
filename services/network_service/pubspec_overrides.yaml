@@ -1,0 +1,6 @@
+# melos_managed_dependency_overrides: cms_serverpod_client,theme_config
+dependency_overrides:
+  cms_serverpod_client:
+    path: ../../server/cms_serverpod_client
+  theme_config:
+    path: ../theme_config

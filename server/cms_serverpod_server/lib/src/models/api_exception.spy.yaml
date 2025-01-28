@@ -1,0 +1,6 @@
+exception: ApiException
+fields:
+  message: String
+  errorCode: int
+  status: String
+  details: List<ErrorDetail>

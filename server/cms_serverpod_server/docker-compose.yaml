@@ -1,0 +1,54 @@
+services:
+  # Development services
+  postgres:
+    image: postgres:16.3
+    ports:
+      - '8090:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: cms_serverpod
+      POSTGRES_PASSWORD: "4HAzW_0XmE37aPFoUXVQFcO9TVsrrTE2"
+    volumes:
+      - cms_serverpod_data:/var/lib/postgresql/data
+    profiles:
+      - '' # Default profile
+      - dev
+  redis:
+    image: redis:6.2.6
+    ports:
+      - '8091:6379'
+    command: redis-server --requirepass "prJIu88C03d2VdLBKmv0gGLls7sgFEwo"
+    environment:
+      - REDIS_REPLICATION_MODE=master
+    profiles:
+      - '' # Default profile
+      - dev
+
+  # Test services
+  postgres_test:
+    image: postgres:16.3
+    ports:
+      - '9090:5432'
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: cms_serverpod_test
+      POSTGRES_PASSWORD: "kXbH6tiDbnS7cmKL4EGHmgPYNDhAx6ob"
+    volumes:
+      - cms_serverpod_test_data:/var/lib/postgresql/data
+    profiles:
+      - '' # Default profile
+      - test
+  redis_test:
+    image: redis:6.2.6
+    ports:
+      - '9091:6379'
+    command: redis-server --requirepass "woeO1qJofwM3_ugVNpU4Yyk2XQIj5bhs"
+    environment:
+      - REDIS_REPLICATION_MODE=master
+    profiles:
+      - '' # Default profile
+      - test
+
+volumes:
+  cms_serverpod_data:
+  cms_serverpod_test_data:

@@ -1,0 +1,38 @@
+name: network_service
+description: "pakage to manage network request"
+version: 0.0.4
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Services
+  serverpod_flutter: 2.3.1
+  cms_serverpod_client: 0.0.1
+  theme_config: ^0.0.4
+
+  # shared
+  dio: ^5.7.0
+  fpdart: ^1.1.1
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+  flutter_dotenv: ^5.2.1
+  device_info_plus: ^11.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  riverpod_generator: ^2.6.1
+  build_runner: any
+  custom_lint: any
+  riverpod_lint: ^2.6.1
+
+flutter:
+  assets:
+    # Add assets from the images directory to the application.
+    - mock/

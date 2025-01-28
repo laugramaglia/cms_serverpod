@@ -1,0 +1,338 @@
+[
+    {
+        "path": "/Accounts/100100000108/1",
+        "method": "GET",
+        "statusCode": 200,
+        "data": {
+            "name": "NORBERTO OSVALDO ",
+            "last_name": "CABALLERO ",
+            "alias": "sdfsddf.sdfsdfsdfs",
+            "cvu": "0001806700000000000802",
+            "cuit": "20328477689",
+            "gender": "M",
+            "cvu_payment_method_id": 57,
+            "birthdate": "1987-03-05T00:00:00",
+            "products": {
+                "product_id": 1,
+                "category_product_id": 4,
+                "description": "PRODUCTO - UAN CAPITAL",
+                "afinity_id": 1,
+                "balance": 65317.080000000002,
+                "maximum_extraction_limit": 0,
+                "maximum_buy_limit": 0,
+                "movements": [
+                    {
+                        "transaction_id": "298",
+                        "type_operation_id": 1,
+                        "type_operation": "CashIn",
+                        "destination_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "origin_account": "ALEJANDRO DARIO  FANTINI ",
+                        "date": "2024-11-01T22:13:17.827",
+                        "amount": 20,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "311",
+                        "type_operation_id": 1,
+                        "type_operation": "CashIn",
+                        "destination_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "origin_account": "JOSE MIGUEL  MONTIVERO ",
+                        "date": "2024-11-01T22:47:18.34",
+                        "amount": 25,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "314",
+                        "type_operation_id": 1,
+                        "type_operation": "CashIn",
+                        "destination_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "origin_account": "ALEJANDRO DARIO  FANTINI ",
+                        "date": "2024-11-01T23:02:27.63",
+                        "amount": 1.23,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "321",
+                        "type_operation_id": 1,
+                        "type_operation": "CashIn",
+                        "destination_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "origin_account": "ALEJANDRO DARIO  FANTINI ",
+                        "date": "2024-11-04T19:39:33.92",
+                        "amount": 12,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "339",
+                        "type_operation_id": 1,
+                        "type_operation": "CashIn",
+                        "destination_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "origin_account": "Laura Andres  Rey ",
+                        "date": "2024-11-14T18:08:23.01",
+                        "amount": 5,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "398",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "MONTIVERO, JOSE MIGUEL ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-01T22:17:26.277",
+                        "amount": 100,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "401",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "MONTIVERO, JOSE MIGUEL ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-01T22:25:09.127",
+                        "amount": 1000,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "413",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "FANTINI, ALEJANDRO DARIO ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-01T22:51:27.7",
+                        "amount": 50,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "416",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "MASCIOTRA, AGUSTIN EZEQUIEL ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-02T01:23:44.707",
+                        "amount": 1500,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "423",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "FANTINI, ALEJANDRO DARIO ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-04T19:40:19.11",
+                        "amount": 3000,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "424",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "FANTINI, ALEJANDRO DARIO ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-04T19:43:28.557",
+                        "amount": 5000,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "425",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "FANTINI, ALEJANDRO DARIO ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-04T19:47:27.2",
+                        "amount": 2500,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "426",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "MASCIOTRA, AGUSTIN EZEQUIEL ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-06T17:04:11.573",
+                        "amount": 2000,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "428",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "MASCIOTRA, AGUSTIN EZEQUIEL ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-06T17:30:33.527",
+                        "amount": 1013,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "432",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "MASCIOTRA, AGUSTIN EZEQUIEL ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-06T20:19:52.51",
+                        "amount": 1000.5,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "435",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "FANTINI, ALEJANDRO DARIO ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-11T19:52:16.003",
+                        "amount": 13000,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "436",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "ROL SOS SOCIEDAD DE HECHO, ROL SOS SOCIEDAD DE HECHO ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-14T16:56:07.343",
+                        "amount": 3000,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "437",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "Rey, Laura Andres ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-14T18:06:56.44",
+                        "amount": 600,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "439",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "FARO COFFE S.R.L, FARO COFFE S.R.L ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-14T18:16:47.413",
+                        "amount": 399,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "440",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": ",  ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-14T18:40:00.47",
+                        "amount": 500,
+                        "status_id": 1
+                    },
+                    {
+                        "transaction_id": "441",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "FARO COFFE S.R.L, FARO COFFE S.R.L ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-14T18:44:04.607",
+                        "amount": 658,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "442",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "FARO COFFE S.R.L, FARO COFFE S.R.L ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-14T18:45:53.803",
+                        "amount": 888,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "443",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": ",  ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-14T18:50:12.083",
+                        "amount": 333,
+                        "status_id": 1
+                    },
+                    {
+                        "transaction_id": "445",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": ",  ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-14T19:11:21.82",
+                        "amount": 3,
+                        "status_id": 1
+                    },
+                    {
+                        "transaction_id": "446",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": ",  ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-14T19:16:41.68",
+                        "amount": 30,
+                        "status_id": 1
+                    },
+                    {
+                        "transaction_id": "455",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "MONTIVERO, JOSE MIGUEL ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-21T21:03:40.52",
+                        "amount": 2,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "456",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "MONTIEL, NICOLAS ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-21T21:04:09.58",
+                        "amount": 10,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "457",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "Rey, Laura Andres ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-21T21:06:20.737",
+                        "amount": 20,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "458",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "MONTIVERO, JOSE MIGUEL ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-21T21:14:21.057",
+                        "amount": 50.649999999999999,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "459",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "MONTIVERO, JOSE MIGUEL ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-21T21:14:59.49",
+                        "amount": 25,
+                        "status_id": 3
+                    },
+                    {
+                        "transaction_id": "460",
+                        "type_operation_id": 2,
+                        "type_operation": "CashOut",
+                        "destination_account": "FARO COFFE S.R.L, FARO COFFE S.R.L ",
+                        "origin_account": "CABALLERO, NORBERTO OSVALDO ",
+                        "date": "2024-11-21T21:17:02.957",
+                        "amount": 35,
+                        "status_id": 3
+                    }
+                ]
+            }
+        }
+    }
+]
