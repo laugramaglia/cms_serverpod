@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:theme_config/theme_config.dart';
 
-enum EnvironmentType { mock, dev, qa, prod }
+enum EnvironmentType { dev, qa, prod }
 
 class Env {
   static Future<void> init(
@@ -12,7 +12,6 @@ class Env {
   }
 
   static String _fileName(EnvironmentType type) => switch (type) {
-        EnvironmentType.mock => '.env.mock',
         EnvironmentType.dev => '.env.dev',
         EnvironmentType.qa => '.env.qa',
         EnvironmentType.prod => '.env.prod',
@@ -25,17 +24,8 @@ class Env {
   // Network config
   static String get host => dotenv.get('HOST');
   static String get prefix => dotenv.get('PREFIX');
+  static int get port => dotenv.getInt('PORT');
   static bool get useHttps => dotenv.getBool('IS_HTTPS');
-  static bool get useMockData => dotenv.getBool('IS_MOCK_DATA');
-
-  // Ids
-  static int get idEntity => dotenv.getInt('ID_ENTITY');
-  static int get idProduct => dotenv.getInt('ID_PRODUCT');
-  static String get idApp => dotenv.get('APP_ID');
-
-  // Onboarding credentials origination
-  static String get onboardingUser => dotenv.get('ONBOARDING_USER');
-  static String get onboardingPassword => dotenv.get('ONBOARDING_PASSWORD');
 
   // Links
   static String get termsUrl => dotenv.get('TERMS_URL');

@@ -34,6 +34,7 @@ class ApiConfig {
   factory ApiConfig.fromJson(Map<String, dynamic> json) => ApiConfig(
         host: json['host'] ?? Env.host,
         prefix: json['prefix'] ?? Env.prefix,
+        port: json['port'] ?? Env.port,
         useHttps: json['useHttps'] ?? Env.useHttps,
       );
 

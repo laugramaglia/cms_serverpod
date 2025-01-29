@@ -1,6 +1,7 @@
+import 'package:auth/src/data/models/email_login_req.dart';
+import 'package:cms_serverpod_client/cms_serverpod_client.dart';
 import 'package:fpdart/fpdart.dart';
-import 'package:network_service/network_service.dart';
 
 abstract class AuthRepository {
-  Future<Either<AppException, String>> login(String req);
+  Future<Either<ApiException, User?>> emailLogin(EmailLoginReq req);
 }

@@ -1,6 +1,7 @@
 import 'package:serverpod/serverpod.dart';
 
 import 'package:cms_serverpod_server/src/web/routes/root.dart';
+import 'package:serverpod_auth_server/serverpod_auth_server.dart' as auth;
 
 import 'src/generated/protocol.dart';
 import 'src/generated/endpoints.dart';
@@ -15,6 +16,7 @@ void run(List<String> args) async {
     args,
     Protocol(),
     Endpoints(),
+    authenticationHandler: auth.authenticationHandler, // Auth
   );
 
   // If you are using any future calls, they need to be registered here.

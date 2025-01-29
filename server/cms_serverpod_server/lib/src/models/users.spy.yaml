@@ -1,0 +1,17 @@
+class: User
+table: users
+fields:
+  username: String
+  email: String
+  password: String
+  googleId: String?
+  roleId: int
+  createdAt: DateTime
+  updatedAt: DateTime
+indexes:
+  unique_email:
+    fields: email
+    unique: true
+  unique_google_id:
+    fields: googleId
+    unique: true

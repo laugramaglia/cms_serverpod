@@ -29,6 +29,7 @@ export 'src/ui/pages/onboarding_scaffold.dart';
 export 'src/ui/pages/generic_message_page.dart';
 export 'src/ui/widgets/label_value_text_widget.dart';
 export 'src/ui/widgets/title_section_widget.dart';
+export 'src/ui/widgets/text_divider.dart';
 
 // Buttons
 export 'src/ui/theme/buttons/bottom_buttons.dart';

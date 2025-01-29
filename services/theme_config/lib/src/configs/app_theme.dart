@@ -8,7 +8,7 @@ class AppTheme {
     required Brightness brightness,
     required ThemeColorExtension extension,
   }) {
-    String? fontFamily = GoogleFonts.roboto().fontFamily;
+    String? fontFamily = GoogleFonts.lora().fontFamily;
     final ColorScheme colorScheme = ColorScheme.fromSeed(
       seedColor: extension.primary,
       brightness: brightness,

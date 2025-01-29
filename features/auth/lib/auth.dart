@@ -1,1 +1,2 @@
-export 'src/presentation/ui/pages/auth_page.dart';
+// Routes
+export 'src/router/routes.dart';

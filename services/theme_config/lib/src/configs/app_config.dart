@@ -18,8 +18,7 @@ class AppConfig {
 
   factory AppConfig.fromMap(Map<String, dynamic> map) {
     final apiConfigBase = ApiConfig.fromJson(map);
-    final colors =
-        ThemeColorExtension.fromJson(map['personalization']['colors']);
+    final colors = ThemeColorExtension.fromJson(map['colors']);
     return AppConfig(
       appTitle: map['appTitle'] ?? Env.appTitle,
       apiConfigBase: apiConfigBase,

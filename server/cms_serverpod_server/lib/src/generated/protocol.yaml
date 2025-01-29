@@ -1,2 +1,4 @@
+auth:
+  - loginWithEmail:
 example:
   - hello:

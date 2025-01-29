@@ -13,9 +13,12 @@ import 'package:serverpod_client/serverpod_client.dart' as _i1;
 import 'api_exception.dart' as _i2;
 import 'error_detail.dart' as _i3;
 import 'example.dart' as _i4;
+import 'users.dart' as _i5;
+import 'package:serverpod_auth_client/serverpod_auth_client.dart' as _i6;
 export 'api_exception.dart';
 export 'error_detail.dart';
 export 'example.dart';
+export 'users.dart';
 export 'client.dart';
 
 class Protocol extends _i1.SerializationManager {
@@ -40,6 +43,9 @@ class Protocol extends _i1.SerializationManager {
     if (t == _i4.Example) {
       return _i4.Example.fromJson(data) as T;
     }
+    if (t == _i5.User) {
+      return _i5.User.fromJson(data) as T;
+    }
     if (t == _i1.getType<_i2.ApiException?>()) {
       return (data != null ? _i2.ApiException.fromJson(data) : null) as T;
     }
@@ -49,10 +55,16 @@ class Protocol extends _i1.SerializationManager {
     if (t == _i1.getType<_i4.Example?>()) {
       return (data != null ? _i4.Example.fromJson(data) : null) as T;
     }
+    if (t == _i1.getType<_i5.User?>()) {
+      return (data != null ? _i5.User.fromJson(data) : null) as T;
+    }
     if (t == List<_i3.ErrorDetail>) {
       return (data as List).map((e) => deserialize<_i3.ErrorDetail>(e)).toList()
           as dynamic;
     }
+    try {
+      return _i6.Protocol().deserialize<T>(data, t);
+    } on _i1.DeserializationTypeNotFoundException catch (_) {}
     return super.deserialize<T>(data, t);
   }
 
@@ -68,6 +80,13 @@ class Protocol extends _i1.SerializationManager {
     }
     if (data is _i4.Example) {
       return 'Example';
+    }
+    if (data is _i5.User) {
+      return 'User';
+    }
+    className = _i6.Protocol().getClassNameForObject(data);
+    if (className != null) {
+      return 'serverpod_auth.$className';
     }
     return null;
   }
@@ -86,6 +105,13 @@ class Protocol extends _i1.SerializationManager {
     }
     if (dataClassName == 'Example') {
       return deserialize<_i4.Example>(data['data']);
+    }
+    if (dataClassName == 'User') {
+      return deserialize<_i5.User>(data['data']);
+    }
+    if (dataClassName.startsWith('serverpod_auth.')) {
+      data['className'] = dataClassName.substring(15);
+      return _i6.Protocol().deserializeByClassName(data);
     }
     return super.deserializeByClassName(data);
   }

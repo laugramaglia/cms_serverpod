@@ -24,7 +24,7 @@ class BottomButtons extends StatelessWidget {
             if (labelSecondary case final labelSecondary?)
               CustomTextButton(
                 onPressed: onPressSecondary,
-                text: labelSecondary,
+                label: labelSecondary,
               ),
             const SizedBox(height: 20),
             PrimaryButton(

@@ -11,8 +11,31 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:serverpod_client/serverpod_client.dart' as _i1;
 import 'dart:async' as _i2;
-import 'package:cms_serverpod_client/src/protocol/example.dart' as _i3;
-import 'protocol.dart' as _i4;
+import 'package:cms_serverpod_client/src/protocol/users.dart' as _i3;
+import 'package:cms_serverpod_client/src/protocol/example.dart' as _i4;
+import 'package:serverpod_auth_client/serverpod_auth_client.dart' as _i5;
+import 'protocol.dart' as _i6;
+
+/// {@category Endpoint}
+class EndpointAuth extends _i1.EndpointRef {
+  EndpointAuth(_i1.EndpointCaller caller) : super(caller);
+
+  @override
+  String get name => 'auth';
+
+  _i2.Future<_i3.User?> loginWithEmail(
+    String? email,
+    String? password,
+  ) =>
+      caller.callServerEndpoint<_i3.User?>(
+        'auth',
+        'loginWithEmail',
+        {
+          'email': email,
+          'password': password,
+        },
+      );
+}
 
 /// {@category Endpoint}
 class EndpointExample extends _i1.EndpointRef {
@@ -21,12 +44,20 @@ class EndpointExample extends _i1.EndpointRef {
   @override
   String get name => 'example';
 
-  _i2.Future<_i3.Example> hello(String? name) =>
-      caller.callServerEndpoint<_i3.Example>(
+  _i2.Future<_i4.Example> hello(String? name) =>
+      caller.callServerEndpoint<_i4.Example>(
         'example',
         'hello',
         {'name': name},
       );
+}
+
+class Modules {
+  Modules(Client client) {
+    auth = _i5.Caller(client);
+  }
+
+  late final _i5.Caller auth;
 }
 
 class Client extends _i1.ServerpodClientShared {
@@ -45,7 +76,7 @@ class Client extends _i1.ServerpodClientShared {
     bool? disconnectStreamsOnLostInternetConnection,
   }) : super(
           host,
-          _i4.Protocol(),
+          _i6.Protocol(),
           securityContext: securityContext,
           authenticationKeyManager: authenticationKeyManager,
           streamingConnectionTimeout: streamingConnectionTimeout,
@@ -55,14 +86,24 @@ class Client extends _i1.ServerpodClientShared {
           disconnectStreamsOnLostInternetConnection:
               disconnectStreamsOnLostInternetConnection,
         ) {
+    auth = EndpointAuth(this);
     example = EndpointExample(this);
+    modules = Modules(this);
   }
+
+  late final EndpointAuth auth;
 
   late final EndpointExample example;
 
-  @override
-  Map<String, _i1.EndpointRef> get endpointRefLookup => {'example': example};
+  late final Modules modules;
 
   @override
-  Map<String, _i1.ModuleEndpointCaller> get moduleLookup => {};
+  Map<String, _i1.EndpointRef> get endpointRefLookup => {
+        'auth': auth,
+        'example': example,
+      };
+
+  @override
+  Map<String, _i1.ModuleEndpointCaller> get moduleLookup =>
+      {'auth': modules.auth};
 }

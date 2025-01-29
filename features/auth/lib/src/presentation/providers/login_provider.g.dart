@@ -6,7 +6,7 @@ part of 'login_provider.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$loginHash() => r'0577f6369688ef77449319976dee32319d33539a';
+String _$loginHash() => r'016d8ba6810d252ed7fe941a526424d5a7fd935a';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -34,13 +34,13 @@ class _SystemHash {
 const loginProvider = LoginFamily();
 
 /// See also [login].
-class LoginFamily extends Family<AsyncValue<String>> {
+class LoginFamily extends Family<AsyncValue<User?>> {
   /// See also [login].
   const LoginFamily();
 
   /// See also [login].
   LoginProvider call(
-    String req,
+    EmailLoginReq req,
   ) {
     return LoginProvider(
       req,
@@ -72,10 +72,10 @@ class LoginFamily extends Family<AsyncValue<String>> {
 }
 
 /// See also [login].
-class LoginProvider extends AutoDisposeFutureProvider<String> {
+class LoginProvider extends AutoDisposeFutureProvider<User?> {
   /// See also [login].
   LoginProvider(
-    String req,
+    EmailLoginReq req,
   ) : this._internal(
           (ref) => login(
             ref as LoginRef,
@@ -102,11 +102,11 @@ class LoginProvider extends AutoDisposeFutureProvider<String> {
     required this.req,
   }) : super.internal();
 
-  final String req;
+  final EmailLoginReq req;
 
   @override
   Override overrideWith(
-    FutureOr<String> Function(LoginRef provider) create,
+    FutureOr<User?> Function(LoginRef provider) create,
   ) {
     return ProviderOverride(
       origin: this,
@@ -123,7 +123,7 @@ class LoginProvider extends AutoDisposeFutureProvider<String> {
   }
 
   @override
-  AutoDisposeFutureProviderElement<String> createElement() {
+  AutoDisposeFutureProviderElement<User?> createElement() {
     return _LoginProviderElement(this);
   }
 
@@ -143,17 +143,17 @@ class LoginProvider extends AutoDisposeFutureProvider<String> {
 
 @Deprecated('Will be removed in 3.0. Use Ref instead')
 // ignore: unused_element
-mixin LoginRef on AutoDisposeFutureProviderRef<String> {
+mixin LoginRef on AutoDisposeFutureProviderRef<User?> {
   /// The parameter `req` of this provider.
-  String get req;
+  EmailLoginReq get req;
 }
 
-class _LoginProviderElement extends AutoDisposeFutureProviderElement<String>
+class _LoginProviderElement extends AutoDisposeFutureProviderElement<User?>
     with LoginRef {
   _LoginProviderElement(super.provider);
 
   @override
-  String get req => (origin as LoginProvider).req;
+  EmailLoginReq get req => (origin as LoginProvider).req;
 }
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package
